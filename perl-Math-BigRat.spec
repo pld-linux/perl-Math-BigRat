@@ -15,12 +15,15 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d377a4d22571f3e7084709ef04746a34
-BuildRequires:	perl-Math-BigInt >= 1.61
-BuildRequires:	perl(Math::BigFloat) >= 1.36
+%if %{with tests}
+BuildRequires:	perl-Math-BigInt >= 1.73
+BuildRequires:	perl(Math::BigFloat) >= 1.47
+BuildRequires:	perl-Test-Simple >= 0.47
+%endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.61
-Requires:	perl(Math::BigFloat) >= 1.36
+Requires:	perl-Math-BigInt >= 1.73
+Requires:	perl(Math::BigFloat) >= 1.47
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
