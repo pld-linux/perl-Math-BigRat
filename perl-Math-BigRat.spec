@@ -8,13 +8,13 @@
 Summary:	Math::BigRat - arbitrarily big rationales
 Summary(pl):	Math::BigRat - dowolnie du¿e liczby wymierne
 Name:		perl-Math-BigRat
-Version:	0.14
-Release:	2
+Version:	0.15
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	19825f58e24f1544e507ecc1beb30ce1
+# Source0-md5:	2a15700a3470d959c4613cc4a1903023
 %if %{with tests}
 BuildRequires:	perl-Math-BigInt >= 1.74
 #BuildRequires:	perl(Math::BigFloat) >= 1.48
