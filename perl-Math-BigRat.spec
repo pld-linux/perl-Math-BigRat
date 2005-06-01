@@ -16,14 +16,14 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2a15700a3470d959c4613cc4a1903023
 %if %{with tests}
-BuildRequires:	perl-Math-BigInt >= 1.74
-#BuildRequires:	perl(Math::BigFloat) >= 1.48
+BuildRequires:	perl-Math-BigInt >= 1.75
+#BuildRequires:	perl(Math::BigFloat) >= 1.50
 BuildRequires:	perl-Test-Simple >= 0.47
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.74
-#Requires:	perl(Math::BigFloat) >= 1.48
+Requires:	perl-Math-BigInt >= 1.75
+#Requires:	perl(Math::BigFloat) >= 1.50
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
