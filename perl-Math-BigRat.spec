@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	BigRat
 Summary:	Math::BigRat - arbitrarily big rationales
-Summary(pl):	Math::BigRat - dowolnie duøe liczby wymierne
+Summary(pl.UTF-8):   Math::BigRat - dowolnie du≈ºe liczby wymierne
 Name:		perl-Math-BigRat
 Version:	0.15
 Release:	1
@@ -31,9 +31,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Math::BigRat complements Math::BigInt and Math::BigFloat by providing
 support for arbitrarily big rationales.
 
-%description -l pl
-Math::BigRat uzupe≥nia Math::BigInt i Math::BigFloat dostarczaj±c
-obs≥ugÍ dowolnie duøych liczb wymiernych.
+%description -l pl.UTF-8
+Math::BigRat uzupe≈Çnia Math::BigInt i Math::BigFloat dostarczajƒÖc
+obs≈Çugƒô dowolnie du≈ºych liczb wymiernych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
