@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	BigRat
 Summary:	Math::BigRat - arbitrarily big rationales
-Summary(pl.UTF-8):   Math::BigRat - dowolnie duże liczby wymierne
+Summary(pl.UTF-8):	Math::BigRat - dowolnie duże liczby wymierne
 Name:		perl-Math-BigRat
 Version:	0.15
 Release:	1
