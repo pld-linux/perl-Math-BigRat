@@ -8,22 +8,21 @@
 Summary:	Math::BigRat - arbitrarily big rationales
 Summary(pl.UTF-8):	Math::BigRat - dowolnie duże liczby wymierne
 Name:		perl-Math-BigRat
-Version:	0.15
+Version:	0.19
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2a15700a3470d959c4613cc4a1903023
+Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	cb93f194a4cf0c69b45858395033d149
+URL:		http://search.cpan.org/dist/Math-BigRat/
 %if %{with tests}
-BuildRequires:	perl-Math-BigInt >= 1.75
-#BuildRequires:	perl(Math::BigFloat) >= 1.50
+BuildRequires:	perl-Math-BigInt >= 1.83
 BuildRequires:	perl-Test-Simple >= 0.47
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.75
-#Requires:	perl(Math::BigFloat) >= 1.50
+Requires:	perl-Math-BigInt >= 1.83
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -56,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc BUGS CHANGES LICENSE NEW README TODO
-%{perl_vendorlib}/%{pdir}/%{pnam}.pm
+%doc BUGS CHANGES LICENSE README TODO
+%{perl_vendorlib}/Math/BigRat.pm
 %{_mandir}/man3/*
